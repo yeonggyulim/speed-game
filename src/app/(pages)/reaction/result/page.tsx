@@ -1,5 +1,6 @@
 import ReactionResultContent from "@templates/ReactionResultContent";
+import { Suspense } from "react";
 
 export default function ReactionResult() {
-    return <ReactionResultContent />;
+    return <Suspense><ReactionResultContent /></Suspense>;
 }
