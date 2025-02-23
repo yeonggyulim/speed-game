@@ -25,6 +25,13 @@ export default function ReactionResultContent() {
             : 0
     );
 
+    const handleShareKaKao = () => {
+        const { Kakao, location } = window;
+        Kakao.Share.sendScrap({
+            requestUrl: location.href,
+        });
+    };
+
     return (
         <div>
             <section className="bg-blue-900 text-center py-8">
@@ -44,12 +51,20 @@ export default function ReactionResultContent() {
                             </p>
                         ))}
                     </div>
-                    <Button
-                        onClick={() => router.push('/reaction')}
-                        className="bg-blue-500 text-white px-6 py-2 rounded"
-                    >
-                        다시 시도하기
-                    </Button>
+                    <div className="flex flex-col gap-4">
+                        <Button
+                            onClick={() => router.push('/reaction')}
+                            className="bg-blue-500 text-white px-6 py-2 rounded"
+                        >
+                            다시 시도하기
+                        </Button>
+                        <Button
+                            onClick={handleShareKaKao}
+                            className="bg-yellow-500 text-white px-6 py-2 rounded"
+                        >
+                            카카오톡 공유하기
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>

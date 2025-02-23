@@ -4,6 +4,7 @@ import Navbar from "@organisms/NavBar";
 import Footer from "@organisms/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import KaKaoAdFit from "@organisms/KaKaoAdFit";
+import KaKaoScript from "@organisms/KaKaoScript";
 
 export const metadata: Metadata = {
   title: "스피드 게임",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <KaKaoAdFit />
         <Footer />
       </body>
+      <KaKaoScript />
       <GoogleAnalytics gaId="G-QYNCFZY3CS" />
     </html>
   );
