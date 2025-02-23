@@ -1,7 +1,6 @@
 import Heading from "@atoms/Heading";
 import Button from "@atoms/Button";
 import Text from "@atoms/Text";
-import AdSection from "@organisms/AdSection";
 import GameList from "@organisms/GameList";
 
 const MainContent: React.FC = () => {
@@ -24,8 +23,6 @@ const MainContent: React.FC = () => {
         <Text className="mb-10">핫한 스피드 게임을 만나보세요.</Text>
         <GameList />
       </section>
-
-      <AdSection />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
-import AdSection from "@organisms/AdSection";
 import ReactionTest from "@organisms/ReactionTest";
 
 const ReactionContent: React.FC = () => {
@@ -16,8 +15,6 @@ const ReactionContent: React.FC = () => {
             <section className="bg-black py-12 text-center">
                 <ReactionTest />
             </section>
-
-            <AdSection />
         </div>
     );
 };

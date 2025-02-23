@@ -5,7 +5,6 @@ import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import Button from "@atoms/Button";
 import { useRouter, useSearchParams } from 'next/navigation';
-import AdSection from '@organisms/AdSection';
 
 export default function ReactionResultContent() {
     const router = useRouter();
@@ -53,7 +52,6 @@ export default function ReactionResultContent() {
                     </Button>
                 </div>
             </div>
-            <AdSection />
         </div>
     );
 }
