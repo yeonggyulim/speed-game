@@ -6,6 +6,14 @@ import Footer from "@organisms/Footer";
 export const metadata: Metadata = {
   title: "스피드 게임",
   description: "스피드 게임을 플레이 하기 위한 사이트입니다.",
+  openGraph: {
+    title: "스피드 게임",
+    description: "스피드 게임을 플레이 하기 위한 사이트입니다.",
+    url: "https://speed-game-test.netlify.app/",
+  },
+  verification: {
+    google: "0zb3O-_c81yqRYVLi9vm0yDq3rqW7iQcVnrCGdynCnI",
+  },
 };
 
 export default function RootLayout({
