@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@organisms/NavBar";
 import Footer from "@organisms/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "스피드 게임",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-QYNCFZY3CS" />
     </html>
   );
 }
