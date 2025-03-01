@@ -4,11 +4,12 @@ interface LinkProps {
   href: string;
   children: React.ReactNode;
   className?: string;
+  onClick?: () => void;
 }
 
-const Link: React.FC<LinkProps> = ({ href, children, className }) => {
+const Link: React.FC<LinkProps> = ({ href, children, className, onClick }) => {
   return (
-    <NextLink href={href} className={className}>
+    <NextLink href={href} className={className} onClick={onClick}>
       {children}
     </NextLink>
   );

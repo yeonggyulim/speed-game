@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
+    console.log('toggleMenu');
     setIsOpen(!isOpen);
   };
 
@@ -32,7 +33,7 @@ const Navbar: React.FC = () => {
           } lg:flex flex-col lg:flex-row lg:space-x-6 w-full lg:w-auto mt-4 lg:mt-0`}
       >
         <div className="lg:flex lg:space-x-6 flex-col lg:flex-row text-center lg:text-left">
-          <NavbarMenuItem href="/">Home</NavbarMenuItem>
+          <NavbarMenuItem href="/" onClick={toggleMenu}>Home</NavbarMenuItem>
           {/* <NavbarMenuItem href="#">Test Top 5</NavbarMenuItem>
           <NavbarMenuItem href="#">Enjoy</NavbarMenuItem>
           <NavbarMenuItem href="#">About</NavbarMenuItem>
